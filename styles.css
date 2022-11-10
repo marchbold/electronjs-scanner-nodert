@@ -1,0 +1,63 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+.content {
+    padding: 0 18px;
+    margin: 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+  
+
+textarea {
+    overflow-y: scroll;
+    height: 30vh;
+    width: 100%;
+    resize: none;
+}
+
+.state-active {
+    color: #ccc;
+    background-color: #008000;
+    cursor:pointer;
+}
+.state-inactive {
+    color: #999999;
+    background-color: #444;
+    cursor:pointer;
+}

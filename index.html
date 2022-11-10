@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Scanner Test Bed</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<script>
+
+</script>
+
+<body>
+  <h1>Image Scanner Test Bed</h1>
+
+
+  <div class="options">
+    Actions: 
+    <button id="buttonStartScan">Start Scan</button>
+    <button id="buttonEdgeDetection">Edge Detection</button>
+  </div>
+
+  <div id="log">
+    <h2>Log</h2>
+    <textarea id="log-content"></textarea>
+  </div>
+
+  <script src="./dist/renderer.js"></script>
+</body>
+
+</html>
