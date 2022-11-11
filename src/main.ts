@@ -18,7 +18,7 @@ function createWindow() {
     ipcMain.handle('startScan', () => startScan() );
     ipcMain.handle('edgeDetection', () => edgeDetection() );
 
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
 }
 
 
@@ -32,6 +32,7 @@ app.whenReady().then(() => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow();
     });
 });
+
 
 
 app.on("window-all-closed", () => {

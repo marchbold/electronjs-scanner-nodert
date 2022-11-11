@@ -1,8 +1,15 @@
 {
+  "include": [ "src" ],
+  "exclude": ["node_modules", "dist"],
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
     "skipLibCheck": true,
-    "module": "commonjs",
+    "pretty": true,
+    "strict": true,
     "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "module": "commonjs",
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": ".",
@@ -10,7 +17,4 @@
       "*": ["node_modules/*"]
     }
   },
-  "include": [
-    "src/**/*"
-  ]
 }
