@@ -50,6 +50,7 @@ const startScan = () => {
             ImageScannerScanSource.feeder,
             outputFolder
           );
+
           for (let i = 0; i < scanResult.scannedFiles.length; i += 1) {
             const f: StorageFile = scanResult.scannedFiles.getAt(i);
             console.log("scanned: " + f.path);
